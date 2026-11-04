@@ -9,6 +9,16 @@ function getProductById(id) {
 }
 
 function getStockStatus(product) {
+  if (
+    product === null ||
+    typeof product !== "object" ||
+    !Object.hasOwn(product, "quantity") ||
+    typeof product.quantity !== "number" ||
+    !Number.isFinite(product.quantity)
+  ) {
+    throw new TypeError("Invalid product or quantity");
+  }
+
   if (product.quantity <= 0) {
     return "Out of stock";
   }
