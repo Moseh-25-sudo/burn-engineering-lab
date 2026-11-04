@@ -1,17 +1,3 @@
-# BURN Engineering Lab
-
-A practical software engineering preparation project.
-
-## Technologies
-- JavaScript
-- Node.js
-- Express.js
-- React
-- Next.js
-- MongoDB
-- PostgreSQL
-- MySQL
-
 ## Learning Objectives
 - Git and version control
 - Debugging and automated testing
@@ -21,6 +7,11 @@ A practical software engineering preparation project.
 - CI/CD and automation
 
 ## Engineering Principles
+
+- Write clean and maintainable code.
+- Test changes before deployment.
+- Document important decisions.
+- Collaborate through code reviews.
 - Prioritise application performance.
 - Maintain secure development practices.
 - Monitor application reliability.
