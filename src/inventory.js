@@ -8,4 +8,16 @@ function getProductById(id) {
   return products.find(product => product.id === id);
 }
 
-module.exports = { getProductById };
+function getStockStatus(product) {
+  if (product.quantity <= 0) {
+    return "Out of stock";
+  }
+
+  if (product.quantity <= 5) {
+    return "Low stock";
+  }
+
+  return "In stock";
+}
+
+module.exports = { getProductById, getStockStatus };
