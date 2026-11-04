@@ -19,3 +19,9 @@ A practical software engineering preparation project.
 - Database operations
 - Frontend development
 - CI/CD and automation
+
+## Engineering Principles
+- Prioritise application performance.
+- Maintain secure development practices.
+- Monitor application reliability.
+- Build scalable software systems.
