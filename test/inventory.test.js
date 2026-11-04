@@ -31,3 +31,24 @@ test("returns In stock when quantity is above five", () => {
 
   assert.strictEqual(getStockStatus(product), "In stock");
 });
+
+test("throws TypeError when product is null", () => {
+  assert.throws(
+    () => getStockStatus(null),
+    TypeError
+  );
+});
+
+test("throws TypeError when product has no quantity property", () => {
+  assert.throws(
+    () => getStockStatus({}),
+    TypeError
+  );
+});
+
+test("throws TypeError when quantity is a string", () => {
+  assert.throws(
+    () => getStockStatus({ quantity: "5" }),
+    TypeError
+  );
+});
